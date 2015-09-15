@@ -1,0 +1,29 @@
+.root {
+    -fx-background-color: black;
+    -fx-font-smoothing-type: lcd;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 1.5em;
+
+    -fx-dark-text-color: black;
+    -fx-mid-text-color: derive(black, 70%);
+    -fx-light-text-color: white;
+
+    -fx-color: -fx-base;
+    -fx-base: #d0d0d0;
+
+     -fx-hover-base: ladder(
+            -fx-base,
+            derive(-fx-base,20%) 20%,
+            derive(-fx-base,30%) 35%,
+            derive(-fx-base,40%) 50%
+         );
+
+
+      -fx-text-background-color: ladder(
+             -fx-background,
+             -fx-light-text-color 45%,
+             -fx-dark-text-color  46%,
+             -fx-dark-text-color  59%,
+             -fx-mid-text-color   60%
+          );
+}

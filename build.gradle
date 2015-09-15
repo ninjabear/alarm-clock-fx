@@ -1,0 +1,19 @@
+apply plugin: 'application'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+mainClassName = 'core.Main'
+
+if (!hasProperty('mainClass')) {
+    ext.mainClass = mainClassName
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.+'
+    compile group: 'com.google.code.gson', name: 'gson', version: '2.3'
+}
